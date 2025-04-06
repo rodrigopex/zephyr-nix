@@ -42,6 +42,7 @@ let
 
       # HACK: Older Zephyr depends on these missing dependencies
       sphinxcontrib-svg2pdfconverter = super.sphinxcontrib-svg2pdfconverter or null;
+      ruff = super.ruff;
     };
   };
 
