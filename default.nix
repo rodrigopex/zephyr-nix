@@ -6,7 +6,7 @@
 , gcc_multi
 , autoreconfHook
 , fetchFromGitHub
-, python310
+, python312
 }:
 
 lib.makeScope newScope (self: let
@@ -16,11 +16,11 @@ lib.makeScope newScope (self: let
 
   sdks = lib.fix (self: {
     "0_17" = mkSdk "0_17" {
-      python3 = python310;
+      python3 = python312;
     };
 
     "0_16" = mkSdk "0_16" {
-      python3 = python310;
+      python3 = python312;
     };
 
     latest = self."0_17";
